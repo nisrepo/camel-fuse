@@ -1,4 +1,4 @@
-package com.ns.camel;
+package com.ns.camel.web.model;
 
 public class PageDTO {
 	private String headerData;

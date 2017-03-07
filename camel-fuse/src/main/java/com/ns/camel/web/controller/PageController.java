@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ns.camel.PageDTO;
 import com.ns.camel.component.DirectComponent;
+import com.ns.camel.web.model.Page;
+import com.ns.camel.web.model.PageDTO;
 import com.ns.camel.web.model.PageRequest;
 
 @RestController
@@ -24,6 +25,8 @@ public class PageController {
 		dto.setBodyData("BODY SECTION");
 		dto.setFooterData("FOOTER SECTION");
 		request.setDto(dto);
+		Page page=new Page();
+		request.setPage(page);
 		
 		return mainDirectComponent.generatePage(request);
 	}

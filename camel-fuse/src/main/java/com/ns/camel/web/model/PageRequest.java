@@ -1,10 +1,9 @@
 package com.ns.camel.web.model;
 
-import com.ns.camel.PageDTO;
-
 public class PageRequest {
 	private PageDTO dto;
-
+    private Page page;
+    
 	public PageDTO getDto() {
 		return dto;
 	}
@@ -13,9 +12,16 @@ public class PageRequest {
 		this.dto = dto;
 	}
 
-	@Override
-	public String toString() {
-		return "PageRequest [dto=" + dto + "]";
+	public Page getPage() {
+		return page;
 	}
 
+	public void setPage(Page page) {
+		this.page = page;
+	}
+
+	@Override
+	public String toString() {
+		return "PageRequest [dto=" + dto + ", page=" + page + "]";
+	}
 }
