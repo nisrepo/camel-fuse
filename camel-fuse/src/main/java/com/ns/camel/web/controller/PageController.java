@@ -21,9 +21,9 @@ public class PageController {
 	public String generatePage(){
 		PageRequest request= new PageRequest();
 		PageDTO dto= new PageDTO();
-		dto.setHeaderData("HEADER SECTION");
-		dto.setBodyData("BODY SECTION");
-		dto.setFooterData("FOOTER SECTION");
+		dto.setHeaderData("HEADER SECTIONS");
+		dto.setBodyData("BODY SECTIONS");
+		dto.setFooterData("FOOTER SECTIONS");
 		request.setDto(dto);
 		Page page=new Page();
 		request.setPage(page);
